@@ -1,0 +1,46 @@
+{
+  "name": "pass_manage",
+  "version": "1.0.0",
+  "description": "**나만의패스워드관리**는 외부 인터넷 클라우드나 중앙화 서버에 데이터를 올리지 않고, 오직 사용자의 **로컬 PC 기기 내부**에만 완벽히 암호화하여 정보를 보관하는 **보안 1등급 로컬 전용 패스워드 매니저**입니다.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "web": "node server.js --web",
+    "electron": "electron .",
+    "build": "electron-builder --win"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^42.3.3",
+    "electron-builder": "^26.15.2"
+  },
+  "build": {
+    "appId": "com.naman.passmanage",
+    "productName": "PassManage",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ]
+    },
+    "files": [
+      "main.js",
+      "server.js",
+      "app.js",
+      "crypto.js",
+      "index.html",
+      "styles.css",
+      "style_v2.css",
+      "tech_bg.png",
+      "package.json"
+    ],
+    "asar": true
+  }
+}

@@ -1,0 +1,22 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Secrets and personal vault data (never commit)
+*.csv
+aegis_vault_*
+*.enc
+vault.json.enc
+web-access.key
+web-transport.pem
+.env
+.env.*
+
+# Old backup copies (contain vault data)
+backup/
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
